@@ -7,16 +7,19 @@ const Mainsection = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <img
-              alt="ecommerce"
+              alt=""
               className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
               src="https://dummyimage.com/400x400"
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 className="text-3xl font-bold mb-2">Hi, I'm</h2>
-              <h1 className="text-5xl font-bold mb-4">Somanshu Bhardwaj</h1>
+              <h1 className="text-5xl font-bold mb-4 text-white">
+                Somanshu Bhardwaj
+              </h1>
               <p className="text-lg text-gray-300">
-                I am currently pursuing B.Tech. I am a passionate learner. I have a keen
-                interest in web development and I am always ready to learn new technologies.
+                I am currently pursuing B.Tech. I am a passionate learner. I
+                have a keen interest in web development and I am always ready to
+                learn new technologies.
               </p>
             </div>
           </div>

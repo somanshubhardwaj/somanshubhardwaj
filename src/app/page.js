@@ -5,9 +5,11 @@ import Mainsection from "../components/Mainsection";
 export default function Home() {
   return (
     <>
-<Nav/>
-<Mainsection/>
-<Footer/>
+      <div className="bg-gray-900">
+        <Nav />
+        <Mainsection />
+        <Footer />
+      </div>
     </>
   );
 }
