@@ -9,7 +9,7 @@ const Mainsection = () => {
             <img
               alt=""
               className="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
-              src="https://dummyimage.com/400x400"
+              src="/pic.jpg"
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
               <h2 className="text-3xl font-bold mb-2">Hi, I'm</h2>
