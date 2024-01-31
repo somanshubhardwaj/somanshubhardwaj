@@ -1,6 +1,11 @@
 import React from "react";
 import Image from 'next/image'
 const Mainsection = () => {
+  const projects=[
+    {id:1,name:"StudyHubConnects",link:"https://studyhubconnect.vercel.app/",image:"/pro1.jpg"},
+    {id:2,name:"StudyHubConnects Blogs",link:"https://blog-somanshubh.vercel.app/",image:"/studyhubscreenshot.jpg"},
+    {id:3,name:"NEWS App",link:"https://newsapp-chi-six.vercel.app/",image:"/news.jpg"},
+  ]
   return (
     <div>
       <section className="text-gray-400 bg-gray-900 body-font overflow-hidden">
@@ -35,7 +40,7 @@ const Mainsection = () => {
                 <img
                   alt="gallery"
                   className="w-full object-cover h-full object-center block"
-                  src="/studyhubscreenshot.jpg"
+                  src="/news.jpg"
                 />
               </div>
               <div className="md:p-2 p-1 w-1/2">
@@ -79,23 +84,27 @@ const Mainsection = () => {
           </div>
         </div>
       </section>
-      <section className="text-gray-400 bg-gray-900 body-font">
+
+
+      {projects.map((project)=>(
+
+<section className="text-gray-400 bg-gray-900 body-font">
         <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
           <img
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
             alt="hero"
-            src="/pro1.jpg"
+            src={project.image}
           />
           <div className="text-center lg:w-2/3 w-full">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-              StudyHubConnects 
+              {project.name}
             </h1>
             <p className="leading-relaxed mb-8">
             
 
             </p>
             <div className="flex justify-center">
-             <a href="https://studyhubconnect.vercel.app/" target="_blank"> <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+             <a href={project.link} target="_blank"> <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Visit
               </button></a>
               
@@ -103,30 +112,15 @@ const Mainsection = () => {
           </div>
         </div>
       </section>
-      <section className="text-gray-400 bg-gray-900 body-font">
-        <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-          <img
-            className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
-            alt="hero"
-            src="/studyhubscreenshot.jpg"
-          />
-          <div className="text-center lg:w-2/3 w-full">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-              StudyHubConnects Blogs
-            </h1>
-            <p className="leading-relaxed mb-8">
-            Study Hub connects Blogs is a platform where you can read blogs related to various topics. 
 
-            </p>
-            <div className="flex justify-center">
-             <a href="https://blog-somanshubh.vercel.app/" target="_blank"> <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Visit
-              </button></a>
-              
-            </div>
-          </div>
-        </div>
-      </section>
+
+      ))
+      
+      
+      
+      }
+      
+      
     </div>
   );
 };
