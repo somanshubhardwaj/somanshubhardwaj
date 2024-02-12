@@ -1,3 +1,4 @@
+<!--suppress HtmlDeprecatedAttribute, HtmlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->mlDeprecatedAttribute -->
 <h1 align="center">Hi 👋, I'm Somanshu Bhardwaj</h1>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=somanshubhardwaj" alt="somanshubhardwaj" /></a> </p>
@@ -6,7 +7,7 @@
 
 - 🔭 I’m currently working on [StudyHubConnect](https://studyhubconnect.vercel.app)
 
-- 🌱 I’m currently learning **NextJS , Django Rest Framework ,TailwindCSS**
+- 🌱 I’m currently learning **Next.js , Django Rest Framework ,TailwindCSS**
 
 - 👨‍💻 All of my projects are available at [https://github.com/somanshubhardwaj](https://github.com/somanshubhardwaj)
 
