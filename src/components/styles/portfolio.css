@@ -1,0 +1,15 @@
+
+.portfolio-item{
+    
+    margin: 10px;
+    padding: 10px;
+}
+.portfolio-item h1{
+    margin-top: 4px;
+    font-size: 1em;
+}
+.portfolio-item img{
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}

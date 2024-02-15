@@ -1,12 +1,12 @@
 import Footer from "../components/Footer";
-import Nav from "../components/Nav";
 import Mainsection from "../components/Mainsection";
-
+import Main from "@/components/Main";
 export default function Home() {
   return (
     <>
-      <div className="">
-      {/*  <Nav />*/}
+      <div className="bg-black text-white">
+        {/*  <Nav />*/}
+        <Main />
         <Mainsection />
         <Footer />
       </div>

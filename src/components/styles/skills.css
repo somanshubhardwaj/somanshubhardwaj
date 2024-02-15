@@ -1,0 +1,19 @@
+.skill-item img{
+    height: 100px;
+    margin: 5px;
+}
+.skill-item{
+    background-color:black ;
+    width: 150px;
+    height:150px;
+    margin: 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+.social{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+
+
+
+/*new ui*/
+.aboutbox{
+    border-left: 5px solid var(--primary);
+    padding: 10px;
+}
+.contactbtn{
+    border : 2px solid var(--primary);
+    width:fit-content;
+    margin-top: 25px;
+    padding:10px;
+    border-radius: 20px;    
+}
+.contactbtn:hover{
+    background: var(--secondary);
+    border: 2px solid var(--secondary);
+    color: var(--primary);
+    font-weight: bolder;
+}
