@@ -54,15 +54,53 @@ const Main = () => {
         <div className="w-full md:w-1/2 "></div>
       </div>
       <Social />
+      <About />
 
-      <Aboutme />
-      <Skills />
-      <Portfolio />
+      <Contact />
     </>
   );
 };
 
 export default Main;
+const About = () => {
+  return(
+    <>
+    <div className="min-h-[20vh] flex items-center justify-center flex-col">
+      <h1 className="text-3xl font-extrabold ">I'm a</h1>
+      
+      <h1 className="text-4xl font-bold textanimation"></h1>
+
+
+
+    </div>
+    </>
+  )
+}
+const Contact = () => {
+  return (
+    <>
+      <div className="w-full flex justify-center items-center">
+        <div className="md:w-1/2 flex justify-center items-center h-full w-full"></div>
+        <div className="md:w-1/2 flex justify-center items-center w-full">
+          <div className="contactbox">
+            <h1 className="text-3xl font-semibold">Contact Me</h1>
+            <form className="flex flex-col my-3">
+              <input type="text" placeholder="Name" className="input" />
+              <input type="email" placeholder="Email" className="input my-6" />
+              <textarea
+                placeholder="Message"
+                className="input"
+                style={{ height: "100px" }}
+              ></textarea>
+              <button className="contactbtn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
 const Social = () => {
   return (
     <>
@@ -141,7 +179,7 @@ const Aboutme = () => {
           opacity: 1,
           scrollTrigger: {
             trigger: el,
-            scrub:true,
+            scrub: true,
           },
         }
       );
@@ -149,35 +187,37 @@ const Aboutme = () => {
     { scope: heading }
   );
   useGSAP(
-    ()=>{
-      const e2=para.current;
+    () => {
+      const e2 = para.current;
       gsap.fromTo(
         e2,
-        {y:100,opacity:0},
+        { y: 100, opacity: 0 },
         {
-          y:0,
-          opacity:1,
-          duration:1,
-          delay:0.2,
-          scrollTrigger:{
-            trigger:e2,
-           toggleActions: "play none none reverse",
-          }
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          delay: 0.2,
+          scrollTrigger: {
+            trigger: e2,
+            toggleActions: "play none none reverse",
+          },
         }
-
-      )
+      );
     },
-    {scope:para}
-  )
+    { scope: para }
+  );
 
   return (
     <>
-      <div className="w-full  flex justify-end my-16 px-2 overflow-x-hidden">
+      <div className="w-full  flex justify-end my-16 px-2 overflow-x-hidden h-min">
         <div className="md:w-3/4 w-full aboutbox overflow-hidden">
           <h1 className="text-5xl font-semibold " ref={heading}>
             About Me
           </h1>
-          <p className="md:text-2xl mt-6 flex justify-between text-justify" ref={para}>
+          <p
+            className="md:text-2xl mt-6 flex justify-between text-justify"
+            ref={para}
+          >
             I am a full stack web developer. I have a passion for web
             development and love to create for web and mobile devices. I am
             always eager to learn new technologies and improve my skills. I am a
@@ -189,3 +229,4 @@ const Aboutme = () => {
     </>
   );
 };
+export { Aboutme, Contact, Social };

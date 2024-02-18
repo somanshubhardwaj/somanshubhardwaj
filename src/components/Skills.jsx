@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef } from "react";
 import "./styles/skills.css";
 import gsap from "gsap/gsap-core";

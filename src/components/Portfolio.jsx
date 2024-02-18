@@ -1,8 +1,10 @@
+"use client";
 import React,{useRef} from "react";
 import "./styles/portfolio.css";
 import gsap from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 const Portfolio = () => {
   const text = useRef(null);
