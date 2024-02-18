@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center flex-wrap">
         <div className="md:w-1/2 flex justify-center items-center h-full w-full"></div>
         <div className="md:w-1/2 flex justify-center items-center w-full">
           <div className="contactbox">
