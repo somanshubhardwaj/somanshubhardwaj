@@ -15,7 +15,6 @@ const Page = () => {
         data.push({ ...doc.data(), id: doc.id });
       });
       setProjects(data);
-      console.log(data);
     } catch (error) {
       console.error(error);
     }

@@ -20,7 +20,6 @@ const Page = () => {
       setProname("");
       setUrl("");
       setImage("");
-      console.log("Document written with ID: ", docRef.id);
     } catch (error) {
       console.error(error);
     }
