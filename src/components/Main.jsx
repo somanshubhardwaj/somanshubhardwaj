@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import gsap from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Contact from "./Contact";
 gsap.registerPlugin(ScrollTrigger);
 const Main = () => {
   const text = useRef(null);
@@ -76,30 +77,6 @@ const About = () => {
     </>
   )
 }
-const Contact = () => {
-  return (
-    <>
-      <div className="w-full flex justify-center items-center">
-        <div className="md:w-1/2 flex justify-center items-center h-full w-full"></div>
-        <div className="md:w-1/2 flex justify-center items-center w-full">
-          <div className="contactbox">
-            <h1 className="text-3xl font-semibold">Contact Me</h1>
-            <form className="flex flex-col my-3">
-              <input type="text" placeholder="Name" className="input" />
-              <input type="email" placeholder="Email" className="input my-6" />
-              <textarea
-                placeholder="Message"
-                className="input"
-                style={{ height: "100px" }}
-              ></textarea>
-              <button className="contactbtn">Send</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
 
 const Social = () => {
   return (
