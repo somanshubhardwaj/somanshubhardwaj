@@ -43,6 +43,9 @@ const Nav = () => {
           <li className="sidebaroptions">
             <Link href="/aboutme">About Me</Link>
           </li>
+          <li className="sidebaroptions">
+            <a href="https://blog-somanshubh.vercel.app" target="_blank" >Blog</a>
+          </li>
          
         </ul>
       </div>

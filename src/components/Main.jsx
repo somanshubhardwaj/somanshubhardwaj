@@ -1,12 +1,11 @@
 "use client";
 import React, { useRef } from "react";
 import "./styles/main.css";
-import Portfolio from "./Portfolio";
-import Skills from "./Skills";
 import gsap from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Contact from "./Contact";
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 const Main = () => {
   const text = useRef(null);
@@ -64,37 +63,59 @@ const Main = () => {
 
 export default Main;
 const About = () => {
-  return(
+  return (
     <>
-    <div className="min-h-[20vh] flex items-center justify-center flex-col">
-      <h1 className="text-3xl font-extrabold ">I'm a</h1>
-      
-      <h1 className="text-4xl font-bold textanimation"></h1>
+      <div className="flex items-center justify-center my-16">
+        <div className="flex flex-wrap justify-around items-center md:w-1/2 w-full">
+          <Navbtn url="/skills" name="Skills" />
+          <Navbtn url="/portfolio" name="Portfolio" />
+          <Navbtn url="/aboutme" name="About Me" />
+          <div className="navigation">Blog</div>
+        </div>
+      </div>
+      <div className="min-h-[20vh] flex items-center justify-center flex-col">
+        <h1 className="text-3xl font-extrabold ">I'm a</h1>
 
-
-
-    </div>
+        <h1 className="text-4xl font-bold textanimation"></h1>
+      </div>
     </>
-  )
-}
-
+  );
+};
+const Navbtn = ({ url, name }) => {
+  return (
+    <>
+      <Link href={url}>
+        <div className="navigation">{name}</div>
+      </Link>
+    </>
+  );
+};
 const Social = () => {
   return (
     <>
       <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start social mb-5 mr-5 glass">
-        <a className="">
+        <a className=" " href="https://github.com/somanshubhardwaj" target="_blank">
           <svg
-            fill="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            className="w-5 h-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
             viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
           >
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+            />
           </svg>
         </a>
-        <a className="ml-3 ">
+
+        <a
+          className=" ml-3"
+          href="https://twitter.com/somanshubha"
+          target="_blank"
+        >
           <svg
             fill="currentColor"
             strokeLinecap="round"
@@ -106,7 +127,11 @@ const Social = () => {
             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
           </svg>
         </a>
-        <a className="ml-3 ">
+        <a
+          className="ml-3 "
+          href="https://www.instagram.com/bhardwaj.somanshu/"
+          target="_blank"
+        >
           <svg
             fill="none"
             stroke="currentColor"
@@ -120,7 +145,11 @@ const Social = () => {
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a className="ml-3 ">
+        <a
+          className="ml-3 "
+          href="https://www.linkedin.com/in/somanshubhardwaj"
+          target="_blank"
+        >
           <svg
             fill="currentColor"
             stroke="currentColor"

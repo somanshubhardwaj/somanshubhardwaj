@@ -18,6 +18,10 @@
     margin-top: 25px;
     padding:10px;
     border-radius: 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .contactbtn:hover{
     background: var(--secondary);
@@ -29,6 +33,7 @@
 .textanimation::after{
     content: "Student";
     animation: textanim 5s infinite;
+    transition: all 0.3s ease;
 }
 @keyframes textanim {
     0%{
@@ -43,4 +48,18 @@
         content: "Student";
         color: var(--primary);
     }
+}
+.navigation{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease;
+}
+.navigation:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 2px solid var(--secondary);
 }

@@ -1,9 +1,9 @@
 .skill-item img{
     height: 100px;
-    margin: 5px;
+    padding: 5px;
 }
 .skill-item{
-    background-color:black ;
+    background-color:rgb(91, 91, 91) ;
     width: 150px;
     height:150px;
     margin: 12px;

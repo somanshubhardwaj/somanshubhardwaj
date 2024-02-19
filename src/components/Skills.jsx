@@ -136,6 +136,12 @@ const Skills = () => {
             alt="mongo"
           />
         </div>
+        <div className="skill-item">
+          <img
+            src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg"
+            alt="mongo"
+          />
+        </div>
       </div>
     </div>
   );
