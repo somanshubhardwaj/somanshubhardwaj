@@ -1,7 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{
-    --primary:#aeff84;
-    --secondary :#067a69;
+:root {
+  --primary: #aeff84;
+  --secondary: #067a69;
+}
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.248), rgb(0, 0, 0)),
+    url("/milkyway.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.aboutbox {
+  border-left: 6px solid var(--primary);
+  height: fit-content;
+}
+.socialbtn {
+  background-color: var(--primary);
+  color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.titleblock{
+    border-bottom: 4px solid var(--primary);
+    font-size: 30px;
+    margin: 15px;
+    font-weight: bold;
+}
+.skillbox{
+    background-color: var(--primary);
+    color: var(--secondary);
+   
 }
