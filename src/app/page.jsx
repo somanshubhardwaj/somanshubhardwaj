@@ -78,9 +78,166 @@ const Skills = () => {
   );
 };
 const Projects = () => {
+  const Projects = [
+    {
+      name: "Threads Clone",
+      desc: "A clone of threads app",
+      link: "https://threads-clone.vercel.app/",
+      status: "Not Deployed",
+      tech: ["React", "TailwindCSS", "MongoDB", "NextJS", "NextAuth"],
+      stage: "Under Development",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Portfolio",
+      desc: "My Portfolio",
+      link: "https://somanshu.vercel.app/",
+      status: "Deployed",
+      tech: ["React", "TailwindCSS", "NextJS"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "StudyHub",
+      desc: "A platform for students to share notes",
+      link: "",
+      status: " Deployed",
+      tech: ["React", "TailwindCSS"],
+      stage: "In Progress",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Vector",
+      desc: "A vector graphics editor",
+      link: "",
+      status: "Not Deployed",
+      tech: ["Python"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Progression",
+      desc: "A platform for students to track their progress",
+      link: "",
+      status: "Not Deployed",
+      tech: ["Python"],
+      stage: "completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Photography",
+      desc: "A photography website",
+      link: "",
+      status: "Deployed",
+      tech: ["React", "TailwindCSS"],
+      stage: "In Progress",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Jujutsu Kaisen",
+      desc: "A website for Jujutsu Kaisen",
+      link: "",
+      status: "Deployed",
+      tech: [],
+      stage: "completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Contact us",
+      desc: "A contact us page",
+      link: "",
+      status: "Deployed",
+      tech: ["React", "TailwindCSS", "Firebase"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Next Notion Blog",
+      desc: "A blog using NextJS and Notion API",
+      link: "",
+      status: "Deployed",
+      tech: ["NextJS", "TailwindCSS", "Notion API"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "RealWeatherApp",
+      desc: "A weather app using OpenWeatherMap API",
+      link: "",
+      status: "Deployed",
+      tech: ["OpenWeatherMap API"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "News App",
+      desc: "A news app using NewsAPI",
+      link: "",
+      status: "Deployed",
+      tech: ["NextJS", "TailwindCSS", "NewsAPI"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+    {
+      name: "Assistant",
+      desc: "A voice assistant using Alan AI",
+      link: "",
+      status: "Deployed",
+      tech: ["Python"],
+      stage: "Completed",
+      github: "",
+      image: "",
+    },
+  ];
   return (
     <div>
       <span className="titleblock ">Projects</span>
+      <div className="">
+        <div className="projects flex flex-wrap justify-between">
+          {Projects.map((project, index) => (
+            <div key={index} className="project p-6 my-6 w-max">
+              <div className="flex  flex-wrap">
+                {project.tech.map((tech, index) => (
+                  <div key={index} className="  font-bold  socialbtn">
+                    {tech}
+                  </div>
+                ))}
+              </div>
+              <h1 className="text-2xl font-bold">{project.name}</h1>
+              <p className="text-lg my-2 text-justify">{project.desc}</p>
+
+              {project.stage === "Completed" ? (
+                <div className="flex  justify-stretch">
+                  <a href={project.link} className="linkbtn">
+                    Visit
+                  </a>
+
+                  <a href={project.github} className="linkbtn">
+                    Github
+                  </a>
+                </div>
+              ) : (
+                <div>
+                  <a href={project.github} className="linkbtn">
+                    Github
+                  </a>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
