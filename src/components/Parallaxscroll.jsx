@@ -7,7 +7,7 @@ import {
   useScroll,
   useSpring,
   useTransform,
-  MotionValue,
+
 } from "framer-motion";
 
 function useParallax(value, distance) {

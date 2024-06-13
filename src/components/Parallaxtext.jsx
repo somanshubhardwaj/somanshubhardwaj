@@ -25,7 +25,7 @@ function Parallax({ children, baseVelocity = 100 }) {
   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
   const directionFactor = useRef(1);
   useAnimationFrame((t, delta) => {
-    let moveby = directionFactor.current * baseVelocity * (delta / 1000);
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
