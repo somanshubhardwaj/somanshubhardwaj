@@ -17,6 +17,9 @@ import {
   faMarkdown,
 } from "@fortawesome/free-brands-svg-icons";
 import Fadeup from "@/animations/Fadeup";
+import Textfade from "@/animations/Textfade";
+import Socialicon from "@/animations/Socialicon";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 export default function Home() {
   return (
     <>
@@ -26,31 +29,49 @@ export default function Home() {
           <div className=" md:flex min-h-[75vh]">
             <div className="min-h-[80vh] flex justify-between items-center">
               <div className="flex flex-col md:w-1/2 gap-2">
-                <span className="">Software Developer</span>
-                <span className="font-bold text-6xl">Hello I'm</span>
-                <span className="font-bold text-6xl name">Somanshu </span>
                 <span className="">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolore accusantium deleniti maiores explicabo, necessitatibus
-                  iure odit quaerat vitae, impedit quae nobis. Voluptatibus,
-                  voluptate adipisci eius molestiae cupiditate officiis quaerat
-                  harum.
+                  <Textfade>Software Developer</Textfade>
+                </span>
+                <span className="font-bold text-6xl">
+                  <Textfade>Hello I'm</Textfade>
+                </span>
+                <span className="font-bold text-6xl name">
+                  <Textfade>Somanshu </Textfade>
+                </span>
+                <span className="">
+                  <Textfade>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore accusantium deleniti maiores explicabo,
+                    necessitatibus iure odit quaerat vitae, impedit quae nobis.
+                    Voluptatibus, voluptate adipisci eius molestiae cupiditate
+                    officiis quaerat harum.
+                  </Textfade>
                 </span>
                 <div className="flex gap-6 items-center flex-col md:flex-row">
-                  <button className="contact-btn">Contact Me</button>
+                  <Fadeup>
+                    <button className="contact-btn">Contact Me</button>
+                  </Fadeup>
                   <div className=" flex gap-3">
-                    <a href="#" className="">
-                      <FontAwesomeIcon icon={faGithub} size="2x" />
-                    </a>
-                    <a href="#" className="">
-                      <FontAwesomeIcon icon={faInstagram} size="2x" />
-                    </a>
-                    <a href="#" className="">
-                      <FontAwesomeIcon icon={faLinkedin} size="2x" />
-                    </a>
-                    <a href="#" className="">
-                      <FontAwesomeIcon icon={faXTwitter} size="2x" />
-                    </a>
+                    <Socialicon>
+                      <a href="#" className="">
+                        <FontAwesomeIcon icon={faGithub} size="2x" />
+                      </a>
+                    </Socialicon>
+                    <Socialicon>
+                      <a href="#" className="">
+                        <FontAwesomeIcon icon={faInstagram} size="2x" />
+                      </a>
+                    </Socialicon>
+                    <Socialicon>
+                      <a href="#" className="">
+                        <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                      </a>
+                    </Socialicon>
+                    <Socialicon>
+                      <a href="#" className="">
+                        <FontAwesomeIcon icon={faXTwitter} size="2x" />
+                      </a>
+                    </Socialicon>
                   </div>
                 </div>
               </div>
@@ -91,6 +112,7 @@ export default function Home() {
   );
 }
 function Skills() {
+  
   return (
     <div className="">
       <div className="flex justify-center items-center">
@@ -99,6 +121,7 @@ function Skills() {
         </span>
       </div>
       <div className="flex flex-wrap justify-center items-center gap-10 pb-10">
+ 
         <Fadeup>
           <div>
             <FontAwesomeIcon icon={faReact} size="4x" />
@@ -138,11 +161,13 @@ function Skills() {
           <div>
             <FontAwesomeIcon icon={faNpm} size="4x" />
           </div>
-        </Fadeup><Fadeup>
+        </Fadeup>
+        <Fadeup>
           <div>
             <FontAwesomeIcon icon={faGit} size="4x" />
           </div>
-        </Fadeup><Fadeup>
+        </Fadeup>
+        <Fadeup>
           <div>
             <FontAwesomeIcon icon={faDocker} size="4x" />
           </div>
