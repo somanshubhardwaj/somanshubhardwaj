@@ -80,39 +80,42 @@ export default function Home() {
           </div>
           <div className="flex justify-between flex-col md:flex-row items-center">
             <div className="flex flex-row gap-2">
-              <span className="font-extrabold text-5xl">12</span>
+              <span className="font-extrabold text-5xl">450+</span>
               <span className="font-thin ">
-                some <br /> text
+                GitHub <br /> Contributions
               </span>
             </div>
             <div className="flex flex-row gap-2">
-              <span className="font-extrabold text-5xl">12</span>
+              <span className="font-extrabold text-5xl">200+</span>
               <span className="font-thin ">
-                some <br /> text
+                Github <br /> Commits
               </span>
             </div>
             <div className="flex flex-row gap-2">
-              <span className="font-extrabold text-5xl">12</span>
+              <span className="font-extrabold text-5xl">50+</span>
               <span className="font-thin ">
-                some <br /> text
+                GitHub <br /> Repo's
               </span>
             </div>
             <div className="flex flex-row gap-2">
-              <span className="font-extrabold text-5xl">12</span>
+              <span className="font-extrabold text-5xl">10+</span>
               <span className="font-thin ">
-                some <br /> text
+                Tech <br /> Skills
               </span>
             </div>
           </div>
         </div>
         <hr />
         <Skills />
+        <hr />
+        <Portfolio />
+        <hr />
+        <Footer />
       </div>
     </>
   );
 }
 function Skills() {
-  
   return (
     <div className="">
       <div className="flex justify-center items-center">
@@ -120,8 +123,7 @@ function Skills() {
           Skills
         </span>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-10 pb-10">
- 
+      <div className="flex flex-wrap justify-center items-center gap-10 pb-10 mb-9">
         <Fadeup>
           <div>
             <FontAwesomeIcon icon={faReact} size="4x" />
@@ -176,3 +178,75 @@ function Skills() {
     </div>
   );
 }
+
+const Portfolio = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Finacial Tracker",
+      github: "https://github.com/somanshubhardwaj/finacialtracker",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    },
+    {
+      id: 2,
+      title: "EduVault",
+      github: "",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    },
+    {
+      id: 3,
+      title: "NuxtProject",
+      github: "",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    },
+    {
+      id: 4,
+      title: "Password Generator",
+      github: "",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    },
+    {
+      id: 5,
+      title: "News App",
+      github: "",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    },
+    {
+      id: 6,
+      title: "Translator",
+      github: "",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    },
+  ];
+  return (
+    <div className="mb-6">
+      <div className="flex justify-center items-center">
+        <span className="text-4xl font-extrabold text-center w-full py-10">
+          Projects
+        </span>
+      </div>
+      <div className="flex flex-wrap gap-6 justify-between">
+        {projects.map((project) => (
+          <div className=" md:w-1/4 w-full border-2 border-white rounded-lg p-3" key={project.id}>
+            <div className="flex justify-between items-center">
+              <span className="text-2xl font-bold">{project.title}</span>
+              <a href={project.github} className="">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            </div>
+            <div className="text-justify">{project.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+const Footer = () => {
+  return(
+    <div className="mt-6 flex justify-center items-center  pb-6">
+      <span className="text-sm font-bold">
+        Made by Somanshu Bhardwaj
+      </span>
+
+    </div>
+  )}

@@ -5,7 +5,7 @@ const Navbar = () => {
     <div>
       <nav className="flex justify-between py-4  items-center">
         <span className="font-bold text-xl">Somanshu Bhardwaj</span>
-        <div className="">
+        <div className="hidden ">
           <a href="#" className="mx-4">
             About
           </a>
