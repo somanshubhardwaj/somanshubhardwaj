@@ -19,7 +19,6 @@ import {
 import Fadeup from "@/animations/Fadeup";
 import Textfade from "@/animations/Textfade";
 import Socialicon from "@/animations/Socialicon";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 export default function Home() {
   return (
     <>
@@ -49,26 +48,27 @@ export default function Home() {
                 </span>
                 <div className="flex gap-6 items-center flex-col md:flex-row">
                   <Fadeup>
-                    <button className="contact-btn">Contact Me</button>
+                    <a href="https://www.instagram.com/bhardwaj.somanshu/">
+                    <button className="contact-btn">Contact Me</button></a>
                   </Fadeup>
                   <div className=" flex gap-3">
                     <Socialicon>
-                      <a href="#" className="">
+                      <a href="https://github.com/somanshubhardwaj" className="">
                         <FontAwesomeIcon icon={faGithub} size="2x" />
                       </a>
                     </Socialicon>
                     <Socialicon>
-                      <a href="#" className="">
+                      <a href="https://www.instagram.com/bhardwaj.somanshu/" className="">
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                       </a>
                     </Socialicon>
                     <Socialicon>
-                      <a href="#" className="">
+                      <a href="https://www.linkedin.com/in/somanshubhardwaj" className="">
                         <FontAwesomeIcon icon={faLinkedin} size="2x" />
                       </a>
                     </Socialicon>
                     <Socialicon>
-                      <a href="#" className="">
+                      <a href="https://x.com/somanshubha" className="">
                         <FontAwesomeIcon icon={faXTwitter} size="2x" />
                       </a>
                     </Socialicon>
@@ -190,33 +190,39 @@ const Portfolio = () => {
     {
       id: 2,
       title: "EduVault",
-      github: "",
+      github: "https://github.com/somanshubhardwaj/EduVault",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
     },
     {
       id: 3,
       title: "NuxtProject",
-      github: "",
+      github: "https://github.com/somanshubhardwaj/nuxtproject",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
     },
     {
       id: 4,
       title: "Password Generator",
-      github: "",
+      github: "https://github.com/somanshubhardwaj/generatepassword",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
     },
     {
       id: 5,
       title: "News App",
-      github: "",
+      github: "https://github.com/somanshubhardwaj/newsapp",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
     },
     {
       id: 6,
       title: "Translator",
-      github: "",
+      github: "https://github.com/somanshubhardwaj/translator",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
     },
+    {
+      id: 7,
+      title: "Contact us",
+      github: "https://github.com/somanshubhardwaj/contactus",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam officiis reiciendis illum culpa atque vero ut, obcaecati, tenetur unde nam alias quas, aut harum repellendus voluptatibus perferendis enim eius architecto.",
+    }
   ];
   return (
     <div className="mb-6">
