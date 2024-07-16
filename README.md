@@ -7,9 +7,8 @@
 
 <p align="left"> <a href="https://twitter.com/somanshubha" target="blank"><img src="https://img.shields.io/twitter/follow/somanshubha?logo=twitter&style=for-the-badge" alt="somanshubha" /></a> </p>
 
-- 🔭 I’m currently working on [Discord Bot]([https://github.com/somanshubhardwaj/my-todo-app](https://github.com/somanshubhardwaj/discord-example-app))
-
-- 🌱 I’m currently learning **Docker, Discord.js and Express.js**
+- 🔭 I’m currently working on TickerTape UI Clone
+- 🌱 I’m currently learning **React Native amd Expo**
 
 - 👯 I’m looking to collaborate on [EduVault](https://github.com/somanshubhardwaj/EduVault)
 
