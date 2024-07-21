@@ -6,7 +6,7 @@
 <p align="left"> <a href="https://twitter.com/somanshubha" target="blank"><img src="https://img.shields.io/twitter/follow/somanshubha?logo=twitter&style=for-the-badge" alt="somanshubha" /></a> </p>
 
 - 🔭 I’m currently working on **AI Bio Generator**
-- 🌱 I’m currently learning **React Native amd Expo**
+- 🌱 I’m currently learning **NextJS**
 
 - 👯 I’m looking to collaborate on [EduVault](https://github.com/somanshubhardwaj/EduVault)
 
