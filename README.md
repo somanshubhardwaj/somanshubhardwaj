@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://twitter.com/somanshubha" target="blank"><img src="https://img.shields.io/twitter/follow/somanshubha?logo=twitter&style=for-the-badge" alt="somanshubha" /></a> </p>
 
-- 🔭 I’m currently working on **Apple UI Clone**
+- 🔭 I’m currently working on **Blog App**
 - 🌱 I’m currently learning **GSAP**
 
 - 👯 I’m looking to collaborate on [EduVault](https://github.com/somanshubhardwaj/EduVault)
