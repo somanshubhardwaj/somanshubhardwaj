@@ -5,14 +5,13 @@
 
 <p align="left"> <a href="https://twitter.com/somanshubha" target="blank"><img src="https://img.shields.io/twitter/follow/somanshubha?logo=twitter&style=for-the-badge" alt="somanshubha" /></a> </p>
 
-- 🔭 I’m currently working on **Blog App**
+- 🔭 I’m currently working on **Slack Clone**
 - 🌱 I’m currently learning **Framer Motion**
 
-- 👯 I’m looking to collaborate on [EduVault](https://github.com/somanshubhardwaj/EduVault)
 
 - 👨‍💻 All of my projects are available at [https://somanshubhardwaj.vercel.app](https://somanshubhardwaj.vercel.app)
 
-- 📝 I have wrote articles related to python programming on [https://aguidetopython.vercel.app](https://aguidetopython.vercel.app)
+- 📝 I have  articles related to python programming on [https://aguidetopython.vercel.app](https://aguidetopython.vercel.app)
 
 - 📫 How to reach me **<https://www.instagram.com/bhardwaj.somanshu>**
 
